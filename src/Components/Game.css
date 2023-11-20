@@ -37,7 +37,7 @@
 }
 
 .fa-heart {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 0, 234);
 }
 
 .manaShow{
@@ -54,7 +54,73 @@ color: rgb(246, 191, 191);
 .btn{
 padding: 0.1em 0.2rem !important ;
 }
-
+.row_player{
+  display:flex;
+  justify-content:center;
+  height:250px;
+}
+.card{
+  height:200px;
+  background: rgba(255, 255, 255, 0.32);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(6.9px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.loose{
+  position:relative;
+  height:40px;
+  width:calc(100% / 4);
+  left:0;
+  line-height:40px;
+  background:#ff3547;
+  font-size:15px;
+  color:white;
+}
+.monsterloose{
+  position:absolute;
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%;
+  background:#67db67;
+}
+.cantPlay{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius:5px;
+  background:rgba(120, 103, 219, 0.479)
+}
+.row-image{
+  position:relative;
+}
+.img{
+  position:relative;
+  width:300px;
+  height:300px;
+  margin:0;
+  padding:0;
+  left:50%;
+  transform:translateX(-50%);
+  background:url(./images/monstre1.jpg)center no-repeat;
+  background-size:cover;
+}
+.images{
+  position:relative;
+  height:300px;
+  width:100%;
+  top:-50px;
+  display:flex;
+  justify-content:center;
+}
+.images img{
+  height:300px;
+  width:calc(100% / 3);
+  object-fit: cover;
+  border-radius:5px;
+}
 .fa-bomb {
   color: black;
 }
@@ -449,53 +515,15 @@ justify-content: center;
 color: #fff;
 text-align: center;
 white-space: nowrap;
-background-color: #007bff;
+background-color: #092de1;
 transition: width .6s ease;
 height: 100%;
 }
 
 .bg-danger {
-background-color: #ff3547 !important;
+background-color: #ee35ff !important;
 height: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #testCarouselle {
 height: 100vh;
